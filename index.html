@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CASIO fx-991ES PLUS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator" aria-label="Calculadora científica">
+    <header class="brand">
+      <span class="logo">CASIO</span>
+      <span class="model">fx-991ES PLUS</span>
+    </header>
+
+    <div class="solar-panel" aria-hidden="true"></div>
+
+    <div class="display">
+      <div class="indicators">
+        <span id="angleIndicator">DEG</span>
+      </div>
+      <div class="history" id="history"></div>
+      <div class="current" id="current">0</div>
+    </div>
+
+    <div class="scientific">
+      <button class="btn sci" data-fn="sin" data-sub="sin&#8315;&sup1;">sin</button>
+      <button class="btn sci" data-fn="cos" data-sub="cos&#8315;&sup1;">cos</button>
+      <button class="btn sci" data-fn="tan" data-sub="tan&#8315;&sup1;">tan</button>
+      <button class="btn sci" data-fn="ln" data-sub="e&#739;">ln</button>
+
+      <button class="btn sci" data-fn="log" data-sub="10&#739;">log</button>
+      <button class="btn sci" data-fn="sqrt" data-sub="&#8731;">&radic;</button>
+      <button class="btn sci" data-fn="sqr" data-sub="x&sup3;">x&sup2;</button>
+      <button class="btn sci" data-fn="inv" data-sub="x!">1/x</button>
+
+      <button class="btn sci" data-operator="^" data-sub="&#696;&radic;x">x&#696;</button>
+      <button class="btn sci" data-fn="fact" data-sub="nPr">n!</button>
+      <button class="btn sci" data-const="pi">&pi;</button>
+      <button class="btn sci" data-const="e">e</button>
+
+      <button class="btn sci" data-fn="exp">e&#739;</button>
+      <button class="btn sci" data-action="exp">EXP</button>
+      <button class="btn sci" data-action="ans">ANS</button>
+      <button class="btn sci angle" id="angleToggle" data-action="angle">DEG</button>
+    </div>
+
+    <div class="buttons">
+      <button class="btn function" data-action="clear">AC</button>
+      <button class="btn function" data-action="delete">DEL</button>
+      <button class="btn function" data-action="percent">%</button>
+      <button class="btn operator" data-operator="/">&divide;</button>
+
+      <button class="btn" data-number="7">7</button>
+      <button class="btn" data-number="8">8</button>
+      <button class="btn" data-number="9">9</button>
+      <button class="btn operator" data-operator="*">&times;</button>
+
+      <button class="btn" data-number="4">4</button>
+      <button class="btn" data-number="5">5</button>
+      <button class="btn" data-number="6">6</button>
+      <button class="btn operator" data-operator="-">&minus;</button>
+
+      <button class="btn" data-number="1">1</button>
+      <button class="btn" data-number="2">2</button>
+      <button class="btn" data-number="3">3</button>
+      <button class="btn operator" data-operator="+">+</button>
+
+      <button class="btn function" data-action="negate">&plusmn;</button>
+      <button class="btn" data-number="0">0</button>
+      <button class="btn" data-number=".">.</button>
+      <button class="btn equals" data-action="equals">=</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
